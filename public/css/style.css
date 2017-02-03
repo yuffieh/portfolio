@@ -1,0 +1,299 @@
+/* CSS reset */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td {
+    margin:0;
+    padding:0;
+}
+html,body {
+    margin:0;
+    padding:0;
+    background-color: none;
+	font-family: 'Questrial', sans-serif;
+
+}
+
+
+/* Hamburger Menu practice */
+
+canvas{
+	height:100vh;
+	background-color:#a8bd48;
+	z-index: -1;
+}
+#hamburger {
+	border: 2px solid white;
+	border-radius: 100px;
+    z-index: 2001;
+    right: 45px;
+    top: 20px;
+    position: fixed;
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .5s ease-in-out;
+  -moz-transition: .5s ease-in-out;
+  -o-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  cursor: pointer;
+}
+
+#hamburger span {
+    position: absolute;
+    display: block;
+    left: 13px;
+    background-color: white;
+    height: 1px;
+    width: 22px;
+    border:1px solid white;
+    border-radius: 5px;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .25s ease-in-out;
+  -moz-transition: .25s ease-in-out;
+  -o-transition: .25s ease-in-out;
+  transition: .25s ease-in-out;
+}
+
+#hamburger span:nth-child(1) {
+  top: 15px;
+}
+
+#hamburger span:nth-child(2) {
+  top: 24px;
+}
+
+#hamburger span:nth-child(3) {
+  top: 34px;
+}
+
+#hamburger.open span:nth-child(1) {
+  top: 25px;
+  -webkit-transform: rotate(135deg);
+  -moz-transform: rotate(135deg);
+  -o-transform: rotate(135deg);
+  transform: rotate(135deg);
+}
+
+#hamburger.open span:nth-child(2) {
+	opacity: 0;
+	top: 0px;
+	-webkit-transform: rotate(135deg);
+	-moz-transform: rotate(135deg);
+	-o-transform: rotate(135deg);
+	transform: rotate(135deg);
+}
+
+#hamburger.open span:nth-child(3) {
+  top: 25px;
+  -webkit-transform: rotate(-135deg);
+  -moz-transform: rotate(-135deg);
+  -o-transform: rotate(-135deg);
+  transform: rotate(-135deg);
+}
+
+
+
+#mylinks{
+	z-index: 3;
+	position: absolute;
+	-webkit-transition: .25s ease-in-out;
+	-moz-transition: .25s ease-in-out;
+	-o-transition: .25s ease-in-out;
+	transition: .25s ease-in-out;
+}
+
+#mylinks.open  {
+	z-index: 1001;
+	position: fixed;
+    height: 100vh;
+    width: 100vw;
+	background-color:#d7d7d7;
+
+}
+
+
+#mylinks ul li a {
+	visibility: hidden;
+	transition:ease 1s opacity;
+	-webkit-transition:ease 1s opacity;
+	-moz-transition:ease 1s opacity;
+}
+
+#mylinks ul {
+	z-index:3;
+    position: absolute;
+    text-align: center;
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    top: 10%;
+    transition:ease 1s opacity;
+	-webkit-transition:ease 1s opacity;
+	-moz-transition:ease 1s opacity;
+
+}
+
+
+#mylinks.open ul li a {
+	visibility: visible;
+    padding: 15px;
+    display: inline-block;
+    color: #303030;
+	font-size: 1.5em;
+    text-transform: uppercase;
+    text-decoration: none;
+    width: 100%;
+    cursor: pointer;
+	-webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-start: 40px;
+    transition:ease 1s opacity;
+	-webkit-transition:ease 1s opacity;
+	-moz-transition:ease 1s opacity;
+
+}
+
+#mylinks.open ul li a:hover{
+	color:white;
+	transition:ease .2s;
+	-webkit-transition:ease .2s;
+	-moz-transition:ease .2s;
+
+}
+
+
+blockquote{
+  display:block;
+  padding: 20px 16px 9px 55px;
+  margin: 0px 0px 20px 9px;
+  position: relative;
+  font-family: Georgia, serif;
+  font-size: 30px;
+  color: black;
+  text-align: justify;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.22);
+
+}
+
+blockquote::before{
+  content: "\201C"; /*Unicode for Left Double Quote*/
+  font-family: 'Playfair Display', serif;
+  font-size: 120px;
+  font-weight: bold;
+  position: absolute;
+  left: 5px;
+  top:-30px;
+}
+blockquote i{
+	color:#98b67e;
+}
+
+blockquote:after{
+  content: "\201D"; /*Unicode for right Double Quote*/
+  font-family: 'Playfair Display', serif;
+  font-size: 120px;
+  font-weight: bold;
+  position: absolute;
+  top:0px;
+}
+
+
+#about-me {
+	top:10%;
+	position: fixed;
+	z-index: 2;
+	height:550px;
+	width:350px;
+	display:flex;
+	margin-left: 35%;
+	align-items: center;
+	justify-content: center;
+	background-color:white;
+}
+
+
+.container{
+	height:100vh;
+	width:100vw;
+}
+
+#mymain{
+	z-index: 5;
+	overflow-x: hidden;
+	top:705px;
+	position: absolute;
+	width:100%;
+}
+
+
+#specialty{
+	/*padding:140px 0px 0px 100px;*/
+	background-color:#121436;
+	width: 100%;
+	height:85vh;
+	color:black;
+
+}
+
+.spec {
+	height:100%;
+	width:450px;
+	background-color:white;
+	overflow-x: hidden;
+}
+
+#info{
+	color:white;
+	text-align: center;
+	/*margin:0px 0px 0px 100%;*/
+	height:500px;
+	width:700px;
+	z-index: 3;
+	/*transition: 1.5s;*/
+}
+
+.info{
+	color:white;
+	text-align: center;
+	margin:-38% 0px 0px 35%;
+	height:500px;
+	width:700px;
+	z-index: 3;
+	transition: 1.5s;
+}
+
+#obj{
+}
+
+#life{
+	padding:140px 0px 0px 100px;
+	background-color:#1b8bb8;
+	width: 100%;
+	height:85vh;
+	color:black;
+
+}
+
+#my{
+	color:#5cc512;
+	cursor: pointer;
+}
+
+#my:hover{
+	color:#1271c5;
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+
+#about-me div {
+	text-align: center;
+}
