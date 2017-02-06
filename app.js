@@ -29,6 +29,9 @@ app.get("/assignment1/contact", function(req, res){
 	res.sendFile(__dirname + "/joey/assignment-1/contact.html")
 });
 
+app.get("/assignment1/info", function(req, res){
+	res.sendFile(__dirname + "/joey/assignment-1/info.html")
+});
 
 
 app.use(express.static("public"));
