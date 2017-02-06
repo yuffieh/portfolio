@@ -21,12 +21,18 @@ app.get("/", function(req, res) {
 	res.sendFile(__dirname + "/index.html");
 });
 
+app.get("/assignment1", function(req, res){
+	res.sendFile(__dirname + "/joey/assignment-1/assignment-1.html")
+});
 
+app.get("/assignment1/contact", function(req, res){
+	res.sendFile(__dirname + "/joey/assignment-1/contact.html")
+});
 
 
 
 app.use(express.static("public"));
-
+// app.use(express.static("joey"));
 
 app.use(function(req, res, next) {
 	res.status(404);
