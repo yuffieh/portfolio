@@ -7,80 +7,81 @@
 	<title>yuffieh</title>
 	<link href="images/favi.ico" rel="icon" type="image/x-icon" />
 	<link href='https://fonts.googleapis.com/css?family=Playfair+Display:400,700,700italic,900' rel='stylesheet' type='text/css'>
+
+	<link rel="stylesheet" type="text/css" href="./css/jquery.fullPage.css" />
+	
+	
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+    
+    <script type="text/javascript" src="js/jquery.fullPage.js"></script>
+
+    
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('#fullpage').fullpage({
+//               sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff'],
+              anchors: ['firstPage', 'secondPage', '3rdPage', '4thPage', 'lastPage'],
+              menu: '#menu',
+            });
+        });
+    </script>
 	<link rel="stylesheet" href="./css/style.css" type="text/css" media="screen" charset="utf-8">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 	<link href='https://fonts.googleapis.com/css?family=Questrial' rel='stylesheet' type='text/css'>
 </head>
 <body>
 
-	<div id="hamburger">
-	  <span></span>
-	  <span></span>
-	  <span></span>
-	</div>
-	<div id="mylinks">
 
-		<ul>
-		   <li><a target="_blank" href="http://yuffieh.com/work/sarah_huynh_resume.pdf">Résumé</a></li>
+<ul id="menu">
+    <li data-menuanchor="firstPage" class="active"><a href="#firstPage">Home</a></li>
+    <li data-menuanchor="secondPage"><a href="#secondPage">Hobbies</a></li>
+    <li data-menuanchor="3rdPage"><a href="#3rdPage">My Work</a></li>
+    <li data-menuanchor="4thPage"><a href="#4thPage">Thanks</a></li>
+    	   <li><a target="_blank" href="http://yuffieh.com/work/sarah_huynh_resume.pdf">Résumé</a></li>
 		   <li><a href="mailto:yst.huynh@gmail.com">Email</a></li>
 		   <li><a target="_blank" href="http://yuffieh.wordpress.com" target="_blank">blog</a></li>
 		   <li><a target="_blank" href="https://www.linkedin.com/in/sarah-huynh-1b3151b8" target="_blank">LinkedIn</a></li>
 		   <li><a target="_blank" href="http://www.twitter.com/yuffieh_" target="_blank">Twitter</a></li>
-		</ul>
-
-	</div>
-
-	<canvas id="canvasElement"></canvas>
-	<div id="about-me">
-
-		<div>
-			<h1>SARAH HUYNH</h1>
-			<h4 class="who">web dev</h4>
-
-		</div>
-	</div>
-	<div id="mymain">
-
-		<div id="specialty">
-			<div class="spec">
-				<img src="./images/headshot.png">
-				<br>
-
-			</div>
-
-			<div id="info">
-			
-			</div>
-		</div>
-
-		<div id="life">
-			<div class="spec">
-				<p id="obj"><h1 style="float:left">{</h1>
-						<div style="padding:1em; line-height: 2em;">
-						likes :[ web development, drawing, acting, singing, cats, dogs ],<br>
-						dislikes: [ spiders, callbacks, infinite loops, liver ], <br>
-						skills : [ ]
-						</div>
-					<br>
-					<h1 style="float:right">}</h1>
-				</p>
+</ul>
 
 
-			</div>
-			<div class="info">
-				<h1>Haha</h1>
-				<br>
-				<p>
-					Hi there! I'm 21 years old living in Boulder, Colorado. I spend my time doing an <i>array</i> of 						things. <br>
-					Making things for myself is hard. Making things for others is easy
-					
-					
-
-				</p>
-			</div>
-		</div>
-
-	</div>
+<div id="fullpage">
+    <div class="section" id="section0">
+         <div class="one">
+            <h1>Sarah Huynh</h1>
+            <p class="quote">hello world</p>
+            
+        </div>
+    </div>
+    <div class="section" id="section1">
+         <div class="two">
+	        <div id="sidebar">
+		        <h1>Hobbies</h1>
+		        <hr>
+		        <p>Under Construction....but I really do have hobbies I swear. But then again this is my site I can do what I want with it! Here is a picture of my cat and dog in the mean time.</p>
+		        <img style=" width:40%;" src="./images/kilala.png"><img style=" width:30%;" src="./images/mimi.png">
+			        
+			     
+	        </div>
+            
+        </div>   
+    </div>
+    <div class="section" id="section2">
+        <div class="three">
+	        <div id="work">
+            <h1>My Work</h1>
+            <hr>
+            <p>My main goal is to help others. I happen to do that through technology and film. All programs essentially make life easier which makes the user happy. (theoretically). My dream is to create a non profit organization to spread awareness to mental health. I believe that counseling/therapy is essential. We are losing our human touch and talking to a professional is something that should be accessible to anyone. Through technology I hope to connect others and create a community built on building others up. It's a small world yet so many people feel alone. Through film I hope to create emotion and inspiration. I believe film is an emotional get away. You feel what the character feels and it releases emotions you didn't even know you had! I hope to be an inspiration in films and make others happy through my craft. This is my work. </p>
+	        </div>
+        </div>
+    </div>
+    <div class="section" id="section3">
+        <div class="four">
+            <h1>Scroll Down</h1>
+            <p>And it will animate down to the first section</p>
+        </div>
+    </div>
+</div>
 
 
 
@@ -90,14 +91,7 @@
 
 
 
-
-
-
-
-
-
-
-<script src="js/animation.js"></script>
 <script src="js/script.js"></script>
+
 </body>
 </html>
