@@ -30,8 +30,11 @@ html,body {
 .one {
 	color:white;
 	width:95%;
-	background-image:url('https://static.pexels.com/photos/127645/pexels-photo-127645.jpeg');
-	background-size: cover;
+	background-color:pink;
+	background-image: url(../images/sarah.svg), url('https://static.pexels.com/photos/127645/pexels-photo-127645.jpeg');
+	background-position: top center;
+    background-repeat: no-repeat;
+	background-size: 100% 100%;
 	height:75%;
 	display:flex;
 	align-items: center;
@@ -80,15 +83,38 @@ html,body {
 	padding:20px;
 }
 
+.four{
+	
+	color:white;
+	width:92%;
+	background-color:none;
+	height:75%;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	display:flex;
+	padding:20px;
+}
 
-
-#sidebar{
+#stuff{
 	text-align: center;
 	background-color: rgba(0, 0, 0, 0.71);
 	height: 93%;
 	padding:20px;
 /* 	border-radius: 15px; */
-	width: 100%;
+	width: 75%;
+	margin:5px;
+}
+
+
+
+#sidebar{
+	background-color: rgba(0, 0, 0, 0.71);
+	height: 93%;
+	padding:20px;
+	margin:5px;
+	line-height: 2em;
+	width: 25%;
 }
 
 /*
@@ -126,8 +152,13 @@ html,body {
 
 /* links */
 
+.quote{
+	margin-top:40px;
+	margin-right:110px;
+	
+}
 
-ul {
+ul#menu {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -135,11 +166,11 @@ ul {
     background-color: #333;
 }
 
-li {
+ul#menu li {
     float: left;
 }
 
-li a {
+ul#menu li a {
     display: block;
     color: white;
     text-align: center;
@@ -148,6 +179,6 @@ li a {
 }
 
 /* Change the link color to #111 (black) on hover */
-li a:hover {
+ul#menu li a:hover {
     background-color: #111;
 }

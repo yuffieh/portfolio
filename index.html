@@ -19,11 +19,47 @@
     
     <script type="text/javascript">
         $(document).ready(function() {
+	        
+	        //simple text change
+	        
+	        
+		function nextMsg() {
+		    if (messages.length == 0) {
+		        messages = [
+		    "web dev",
+		    "actor",
+		    "animal lover",
+		    "javascript is weird"
+		].reverse();
+		nextMsg();
+		    } else {
+			    console.log(messages);
+		        // change content of message, fade in, wait, fade out and continue with next message
+		        $('.quote').html(messages.pop()).fadeIn(500).delay(1000).fadeOut(500, nextMsg);
+		    }
+		};
+		// list of messages to display
+		var messages = [
+		     "web dev",
+		    "actor",
+		    "animal lover",
+		    "javascript is weird"
+		].reverse();
+		
+		// initially hide the message
+		$('.quote').hide();
+		
+		// start animation
+		nextMsg();
+	        
+	        //anchors for jquery plugin
             $('#fullpage').fullpage({
-//               sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff'],
               anchors: ['home', 'hobbies', 'work', 'thanks'],
               menu: '#menu',
             });
+            
+            
+            
         });
     </script>
 	<link rel="stylesheet" href="./css/style.css" type="text/css" media="screen" charset="utf-8">
@@ -34,7 +70,7 @@
 
 <ul id="menu">
     <li data-menuanchor="home" class="active"><a href="#home">Home</a></li>
-    <li data-menuanchor="hobbies"><a href="#hobbies">Hobbies</a></li>
+    <li data-menuanchor="about-me"><a href="#about-me">About Me</a></li>
     <li data-menuanchor="work"><a href="#work">My Work</a></li>
     <li data-menuanchor="thanks"><a href="#thanks">Thanks</a></li>
     
@@ -49,7 +85,7 @@
 <div id="fullpage">
     <div class="section" id="section0">
          <div class="one">
-            <h1>Sarah Huynh</h1>
+<!--             <img style="width:100%;" src="/images/sarah.svg"/> -->
             <p class="quote">hello world</p>
             
         </div>
@@ -57,12 +93,28 @@
     <div class="section" id="section1">
          <div class="two">
 	        <div id="sidebar">
-		        <h1>Hobbies</h1>
+				<h1>BIO</h1>
+				<hr>
+				<ul>
+				<h3>
+					<li>Name: Sarah Huynh</li>
+					<li>Age: 21</li>
+					<li>Sign: Aries</li>
+					<li>Location: Colorado</li>
+					<li>Random Fact: I've dislocated my knee twice</li>
+				</h3>
+				</ul>
+			
+	        </div>
+	        <div id="stuff">
+		        <h1>About me</h1>
 		        <hr>
-		        <p>Under Construction....but I really do have hobbies I swear. But then again this is my site I can do what I want with it! Here is a picture of my cat and dog in the mean time.</p>
+		        <p>Under Construction....It's kind of hard to write about myself... I'm fabulous? hmmm that just doesn't look right..... But then again this is my site I can do what I want with it! Here is a picture of my cat and dog in the mean time.</p>
 		        <img style=" width:40%;" src="./images/kilala.png"><img style=" width:30%;" src="./images/mimi.png">
 			        
 			     
+		        
+		        
 	        </div>
             
         </div>   
@@ -78,8 +130,8 @@
     </div>
     <div class="section" id="section3">
         <div class="four">
-            <h1>Scroll Down</h1>
-            <p>And it will animate down to the first section</p>
+            <img src="/images/thanks.svg">
+            
         </div>
     </div>
 </div>
