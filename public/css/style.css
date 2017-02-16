@@ -30,7 +30,6 @@ html,body {
 .one {
 	color:white;
 	width:95%;
-	background-color:pink;
 	background-image: url(../images/sarah.svg), url('https://static.pexels.com/photos/127645/pexels-photo-127645.jpeg');
 	background-position: top center;
     background-repeat: no-repeat;
@@ -51,9 +50,13 @@ html,body {
 }
 
 #mywork{
+	background-image:url(../images/work.svg);
+	background-position: center center;
+	background-repeat:no-repeat;
+	height:95%;
 	text-align: center;
 	width:50%;
-	background-color: rgba(0, 0, 0, 0.6);
+	background-color: rgba(0, 0, 0, 0.7);
 	line-height: 1.5em;
 	padding:20px;
 }
@@ -84,16 +87,47 @@ html,body {
 }
 
 .four{
-	
+	font-family: "DomaineText",Georgia,serif;
 	color:white;
 	width:92%;
-	background-color:none;
+	background-image:url(../images/thanks.svg);
+	background-position: center center;
+	background-repeat: no-repeat;
 	height:75%;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	display:flex;
 	padding:20px;
+	line-height: 2em;
+}
+
+#work-text{
+    display: flex;
+    height: 50%;
+    width: 60%;
+    font-size: 14px;
+    align-items: center;
+    margin-left: 120px;
+    margin-top: 140px;
+}
+
+
+.test {
+	justify-content: space-around;
+	float:right;
+    height: 100%;
+    width:20%;
+    display: flex;
+    flex-direction: column;
+/*     align-self: flex-end; */
+    margin-right:0;
+}
+
+
+.test1 {
+	justify-content: space-around;
+	float:left;
+	width:20%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 #stuff{
@@ -163,7 +197,7 @@ ul#menu {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
+    background-color: black;
 }
 
 ul#menu li {
