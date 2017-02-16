@@ -7,9 +7,21 @@ html,body {
     margin:0;
     padding:0;
     background-color: black;
-	font-family: 'Questrial', sans-serif;
+	font-family:'Lato-light';
 
 }
+
+.display-test {
+	display:none;
+}
+
+/*
+.top:hover > .display-test {
+    display:none;
+}
+*/
+
+
 
 .fp-tableCell{
 	display: flex;
@@ -61,15 +73,23 @@ html,body {
 	padding:20px;
 }
 
+.two div{
+	line-height: 2em;
+	height:100%;
+	width:60%;
+	text-align: center;
+}
 .two{
-	
 	color:white;
 	width:92%;
-	background-image:url('https://static.pexels.com/photos/6374/flowers-desk-office-vintage.jpg');
+/* 	background-image:url('https://static.pexels.com/photos/6374/flowers-desk-office-vintage.jpg'); */
 	background-size: cover;
 	height:75%;
 	display:flex;
 	padding:20px;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
 }
 
 .three{
@@ -116,7 +136,6 @@ html,body {
     width:20%;
     display: flex;
     flex-direction: column;
-/*     align-self: flex-end; */
     margin-right:0;
 }
 
@@ -130,59 +149,29 @@ html,body {
     flex-direction: column;
 }
 
-#stuff{
+.bottom{
 	text-align: center;
-	background-color: rgba(0, 0, 0, 0.71);
-	height: 93%;
+	background-color: white;
+	height: 55%;
 	padding:20px;
-/* 	border-radius: 15px; */
-	width: 75%;
+	align-self: flex-end;
+	width: 15%;
 	margin:5px;
 }
 
 
-
-#sidebar{
-	background-color: rgba(0, 0, 0, 0.71);
-	height: 93%;
+.top{
+	background-color: white;
+	height: 55%;
 	padding:20px;
 	margin:5px;
 	line-height: 2em;
-	width: 25%;
-}
-
-/*
-
-#flex-hobbies{
-	width:100%;
+	width: 15%;
 	display:flex;
-	flex-wrap: wrap;
-	justify-content: space-around;
-	flex-direction: row;
-	align-content: center;
-	
-	
-}
-*/
-
- 
-/*
-#flex-hobbies div img{
-	height:100%;
-	width:100%;
-	
+	flex-direction: column;
 }
 
-#flex-hobbies div{
-	
-	border: 5px solid white;
-	height: 45%;
-	width: 27%;
-	margin:10px;
-	padding: 10px;
-	
-}
-*/
+
 
 /* links */
 
