@@ -1,0 +1,526 @@
+/* ipad pro */
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+	  
+	
+	.one {
+		color:white;
+		width:100%;
+		background-image: url(../images/sarah.svg), url('https://static.pexels.com/photos/127645/pexels-photo-127645.jpeg');
+		background-position: top center;
+	    background-repeat: no-repeat;
+		background-size: 150% 100%;
+		height:75%;
+		display:flex;
+		align-items: center;
+		flex-direction: column;
+		justify-content: center;
+	}
+	
+	.quote{
+		margin-top:60px;
+		margin-right:110px;
+	}
+		
+	
+	
+	#menu{
+		position: fixed;
+		z-index: 2000;
+		width:100%;
+		background-color:black;
+		display:none;
+	}
+	
+	
+	
+	
+	#mywork{
+		background-image:url(../images/work.svg);
+		background-position: center center;
+		background-repeat:no-repeat;
+		background-size:70% 100%;
+		height:80%;
+		text-align: center;
+		width:100%;
+		background-color: rgba(0, 0, 0, 0.7);
+		line-height: 1.5em;
+		padding:20px;
+	}
+	
+	#work-text{
+	    display: flex;
+	    height: 49%;
+	    width: 48%;
+	    font-size: 14px;
+	    align-items: center;
+	    line-height: 3em;
+	    margin-left: 26%;
+	    margin-top: 25%;
+	}
+	
+	.two div{
+		line-height: 3em;
+		height:80%;
+		width:80%;
+		text-align: center;
+	}
+	.two{
+		color:white;
+		width:92%;
+		background-size: cover;
+		height:75%;
+		display:flex;
+		padding:20px;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+	
+	.three{
+		
+		color:white;
+		width:100%;
+		background-image:url('https://static.pexels.com/photos/51171/pexels-photo-51171.jpeg');
+		background-size: cover;
+		height:90%;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		display:flex;
+		padding:20px;
+	}
+	
+	.four{
+		font-family: "DomaineText",Georgia,serif;
+		color:white;
+		width:100%;
+		background-image:url(../images/thanks.svg);
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-size:35%;
+		height:80%;
+		padding:20px;
+		line-height: 2em;
+	}
+	
+
+	
+	
+	.test {
+		justify-content: space-around;
+		float:right;
+	    height: 100%;
+	    width:20%;
+	    display: flex;
+	    flex-direction: column;
+	    margin-right: 50px;
+	}
+	
+	
+	.test1 {
+		justify-content: space-around;
+		float:left;
+		width:20%;
+	    height: 100%;
+	    display: flex;
+	    flex-direction: column;
+	    font-size: 13px;
+	    padding-left: 50px;
+	}
+		  
+	  
+
+}
+
+
+
+/* iphone 6 plus*/
+
+
+@media only screen 
+  and (min-device-width: 414px) 
+  and (max-device-width: 736px) 
+  and (-webkit-min-device-pixel-ratio: 3) { 
+	  
+	  	
+	.one {
+		color:white;
+		width:100%;
+		background-image: url(../images/sarah.svg), url('https://static.pexels.com/photos/127645/pexels-photo-127645.jpeg');
+		background-position: top center;
+	    background-repeat: no-repeat;
+		background-size: 190% 100%;
+		height:75%;
+		display:flex;
+		align-items: center;
+		flex-direction: column;
+		justify-content: center;
+	}
+	
+	.quote{
+		margin-top:40px;
+		margin-right:110px;
+	}
+		
+	
+	
+	#menu{
+		position: fixed;
+		z-index: 2000;
+		width:100%;
+		background-color:black;
+		display:none;
+	}
+	
+	
+	
+	
+	#mywork{
+		background-image:url(../images/work.svg);
+		background-position: center center;
+		background-repeat:no-repeat;
+		background-size:100% 100%;
+		height:80%;
+		text-align: center;
+		width:100%;
+		background-color: rgba(0, 0, 0, 0.7);
+		line-height: 1em;
+		padding:20px;
+	}
+	
+	#work-text{
+		display: flex;
+	    height: 60%;
+	    width: 73%;
+	    font-size: 13px;
+	    align-items: center;
+	    line-height: 1.5em;
+	    margin-left: 14%;
+	    margin-top: 29%;
+	}
+	
+	.two div{
+		line-height: 2.5em;
+		height:80%;
+		width:90%;
+		font-size:smaller;
+		text-align: center;
+	}
+	.two{
+		color:white;
+		width:92%;
+		background-size: cover;
+		height:75%;
+		display:flex;
+		padding:20px;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+	
+	.three{
+		
+		color:white;
+		width:100%;
+		background-image:url('https://static.pexels.com/photos/51171/pexels-photo-51171.jpeg');
+		background-size: cover;
+		height:90%;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		display:flex;
+		padding:20px;
+	}
+	
+	.four{
+		font-family: "DomaineText",Georgia,serif;
+		color:white;
+		padding:40px;
+		background-image:url(../images/thanks.svg);
+		background-position: top center;
+		background-repeat: no-repeat;
+		background-size:35%;
+		height:100%;
+		text-align: center;
+	}
+	
+
+	
+	
+	.test {
+	    height: auto;
+	    width:100%;
+	    font-size: 15px;
+	}
+	
+	
+	.test1 {
+		margin-top:35%;
+		width:100%;
+	    height: auto;
+	    font-size: 15px;
+	}
+
+
+}
+
+
+/* iphone 6 */
+
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2) { 
+	  
+	  
+	  	
+	.one {
+		color:white;
+		width:100%;
+		background-image: url(../images/sarah.svg), url('https://static.pexels.com/photos/127645/pexels-photo-127645.jpeg');
+		background-position: top center;
+	    background-repeat: no-repeat;
+		background-size: 190% 100%;
+		height:75%;
+		display:flex;
+		align-items: center;
+		flex-direction: column;
+		justify-content: center;
+	}
+	
+	.quote{
+		margin-top:40px;
+		margin-right:110px;
+	}
+		
+	
+	
+	#menu{
+		position: fixed;
+		z-index: 2000;
+		width:100%;
+		background-color:black;
+		display:none;
+	}
+	
+	
+	
+	
+	#mywork{
+		background-image:url(../images/work.svg);
+		background-position: center center;
+		background-repeat:no-repeat;
+		background-size:100% 100%;
+		height:80%;
+		text-align: center;
+		width:100%;
+		background-color: rgba(0, 0, 0, 0.7);
+		line-height: 1em;
+		padding:20px;
+	}
+	
+	#work-text{
+	    display: flex;
+	    height: 60%;
+	    width: 65%;
+	    font-size: 11px;
+	    align-items: center;
+	    line-height: 1.5em;
+	    margin-left: 17%;
+	    margin-top: 29%;
+	}
+	
+	.two div{
+		line-height: 1.5em;
+		height:80%;
+		width:90%;
+		font-size:smaller;
+		text-align: center;
+	}
+	.two{
+		color:white;
+		width:92%;
+		background-size: cover;
+		height:75%;
+		display:flex;
+		padding:20px;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+	
+	.three{
+		
+		color:white;
+		width:100%;
+		background-image:url('https://static.pexels.com/photos/51171/pexels-photo-51171.jpeg');
+		background-size: cover;
+		height:90%;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		display:flex;
+		padding:20px;
+	}
+	
+	.four{
+		font-family: "DomaineText",Georgia,serif;
+		color:white;
+		background-image:url(../images/thanks.svg);
+		background-position: top center;
+		background-repeat: no-repeat;
+		background-size:35%;
+		height:100%;
+		text-align: center;
+	}
+	
+
+	
+	
+	.test {
+	    height: auto;
+	    width:100%;
+	    font-size: 14px;
+	}
+	
+	
+	.test1 {
+		margin-top:35%;
+		width:100%;
+	    height: auto;
+	    font-size: 14px;
+	}
+
+}
+
+
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+	  
+	  	  
+	  	
+	.one {
+		color:white;
+		width:100%;
+		background-image: url(../images/sarah.svg), url('https://static.pexels.com/photos/127645/pexels-photo-127645.jpeg');
+		background-position: top center;
+	    background-repeat: no-repeat;
+		background-size: 190% 100%;
+		height:75%;
+		display:flex;
+		align-items: center;
+		flex-direction: column;
+		justify-content: center;
+	}
+	
+	.quote{
+		margin-top:40px;
+		margin-right:110px;
+	}
+		
+	
+	
+	#menu{
+		position: fixed;
+		z-index: 2000;
+		width:100%;
+		background-color:black;
+		display:none;
+	}
+	
+	
+	
+	
+	#mywork{
+		background-image:url(../images/work.svg);
+		background-position: center center;
+		background-repeat:no-repeat;
+		background-size:100% 100%;
+		height:80%;
+		text-align: center;
+		width:100%;
+		background-color: rgba(0, 0, 0, 0.7);
+		line-height: 1em;
+		padding:20px;
+	}
+	
+	#work-text{
+	    display: flex;
+	    height: 60%;
+	    width: 65%;
+	    font-size: 9.5px;
+	    align-items: center;
+	    line-height: 1.5em;
+	    margin-left: 17%;
+	    margin-top: 29%;
+	}
+	
+	.two div{
+		line-height: 1.5em;
+		height:70%;
+		width:90%;
+		font-size:smaller;
+		text-align: center;
+	}
+	.two{
+		color:white;
+		width:92%;
+		background-size: cover;
+		height:75%;
+		display:flex;
+		padding:20px;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+	
+	.three{
+		
+		color:white;
+		width:100%;
+		background-image:url('https://static.pexels.com/photos/51171/pexels-photo-51171.jpeg');
+		background-size: cover;
+		height:90%;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		display:flex;
+		padding:20px;
+	}
+	
+	.four{
+		font-family: "DomaineText",Georgia,serif;
+		color:white;
+		background-image:url(../images/thanks.svg);
+		background-position: top center;
+		background-repeat: no-repeat;
+		background-size:35%;
+		height:100%;
+		text-align: center;
+	}
+	
+
+	
+	
+	.test {
+	    height: auto;
+	    width:100%;
+	    font-size: 11px;
+	}
+	
+	
+	.test1 {
+		margin-top:35%;
+		width:100%;
+	    height: auto;
+	    font-size: 11px;
+	}
+	  
+	  
+}
