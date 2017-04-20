@@ -35,7 +35,6 @@ app.get("/assignment1/info", function(req, res){
 
 
 app.use(express.static("public"));
-// app.use(express.static("joey"));
 
 app.use(function(req, res, next) {
 	res.status(404);
@@ -52,4 +51,3 @@ app.use(function(err, req, res, next) {
 app.listen(PORT, function() {
 	console.log("Listening on port " + PORT);
 });
-
